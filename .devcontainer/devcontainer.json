@@ -1,11 +1,11 @@
 {
-  "image": "mcr.microsoft.com/devcontainers/universal:2",
+  "image": "kalilinux/kali-rolling",
   "hostRequirements": {
     "cpus": 4
   },
   "waitFor": "onCreateCommand",
   "updateContentCommand": "python3 -m pip install -r requirements.txt",
-  "postCreateCommand": "",
+  "postCreateCommand": "apt update && apt install kali-linux-headless",
   "customizations": {
     "codespaces": {
       "openFiles": []
