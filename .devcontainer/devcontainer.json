@@ -1,5 +1,5 @@
 {
-  "image": "kalilinux/kali-rolling",
+  "image": "gitpod/workspace-full",
   "hostRequirements": {
     "cpus": 4
   },
