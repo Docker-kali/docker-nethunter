@@ -2,8 +2,9 @@
   "name": "Android 10 with VNC",
   "image": "twaik/android-vnc:android-10",
   "runArgs": ["--cap-add=SYS_PTRACE", "--security-opt", "seccomp=unconfined"],
-  "appPort": [5900:5900],
+  "appPort": ["5900:5900"],
   "remoteUser": "root",
+  "postCreateCommand": "x11vnc -forever -create -display :1 -passwd 654321",
   "extensions": []
 }
     },
